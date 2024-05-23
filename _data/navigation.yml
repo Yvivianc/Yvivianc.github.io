@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: culture
+  link: /culture.html
+- name: Product
+  link: /productinfo.html
+- name: Staff
+  link: /staff.html
+- name: Contact
+  link: /contact.html

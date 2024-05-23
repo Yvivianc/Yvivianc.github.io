@@ -1,0 +1,44 @@
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    background-color: transparent; /* 设置按钮背景为透明 */
+  }
+
+  .navbar a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: #ccc;
+  }
+
+  .navbar a:hover {
+    background-color: lightblue;
+  }
+
+  .navbar a.selected {
+    color: green;
+  }
+</style>
+
+<div class="navbar">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="selected"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+</div>
