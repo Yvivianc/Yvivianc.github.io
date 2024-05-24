@@ -1,12 +1,12 @@
-- name: Home
+- name: 首页
   link: /
-- name: About
+- name: 企业介绍
   link: /about.html
-- name: culture
-  link: /culture.html
-- name: Product
+- name: 企业文化
+  link: /new.html
+- name: 产品介绍
   link: /productinfo.html
-- name: Staff
-  link: /staff.html
-- name: Contact
+- name: 招聘信息
+  link: /recruit.html
+- name: 联系我们
   link: /contact.html

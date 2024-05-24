@@ -1,41 +1,39 @@
 <style>
   .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: #313131;
+    padding: 10px;/*上下边距*/
+    padding-left: 50px;/*左侧边距*/
   }
 
   .navbar a {
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5px 20px;
+    border-radius: 15px;
     position: relative;
     background-color: transparent; /* 设置按钮背景为透明 */
-  }
-
-  .navbar a:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 80%;
-    background-color: #ccc;
+    font-size: 18px;
   }
 
   .navbar a:hover {
-    background-color: lightblue;
+    background-color: rgb(245, 174, 163);
   }
 
   .navbar a.selected {
-    color: green;
+    color: rgb(255, 255, 255);
   }
+
+  .logo {  
+    height: 50px; /* 设置logo的高度，根据需要调整 */  
+    width: auto; /* 保持logo的原始宽高比 */  
+    margin-right: 20px; /* 如果需要，给logo右侧添加一些空间，以便与导航链接分隔开 */  
+}
 </style>
 
-<div class="navbar">
+<div class="navbar"style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+  <img src="https://img2.imgtp.com/2024/05/22/MJHyQHLO.png" alt="Logo" class="logo"> 
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}class="selected"{% endif %}>
       {{ item.name }}

@@ -16,7 +16,7 @@ title: Contact
       background-attachment: fixed;
     }
     h1 {
-      font-family: '黑体', sans-serif;
+      font-family: '宋体', sans-serif;
       font-size: 70px;
       color: #FFFFFF;
       text-align: center;
@@ -30,7 +30,7 @@ title: Contact
       text-align: left; /* 左对齐 */
     }
     h3 {
-      font-family: '黑体', sans-serif;
+      font-family: '宋体', sans-serif;
       font-size: 20px;
       color: #000000;
       margin: 10px 0; /* 设置上下间距 */
