@@ -7,6 +7,8 @@ collections:
     output: true
   types:
     output: true
+  posts:
+    output: true
 
 
 defaults:
@@ -29,3 +31,8 @@ defaults:
       type: "recruitInfos"
     values:
       layout: "recruitInfo"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
