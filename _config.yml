@@ -3,6 +3,10 @@ collections:
     output: true
   recruitInfos:  
     output: true
+  products:
+    output: true
+  types:
+    output: true
 
 
 defaults:
@@ -13,9 +17,9 @@ defaults:
       layout: "author"
   - scope:
       path: ""
-      type: "posts"
+      type: "products"
     values:
-      layout: "post"
+      layout: "product"
   - scope:
       path: ""
     values:
